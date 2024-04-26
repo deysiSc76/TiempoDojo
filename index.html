@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tiempo Dojo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="nav">
+                <h1>Tiempo Dojo</h1>
+                <div class="sub-nav">
+                    <h2 onclick="alert('esperando el reporte del tiempo')">Burbank</h2>
+                    <h2 onclick="alert('esperando el reporte del tiempo')">Chicago</h2>
+                    <h2 onclick="alert('esperando el reporte del tiempo')">Dallas</h2>
+                </div>
+            </div>   
+        </div>
+
+        <div class="bodyWeb">
+            <div class="headerBody">
+                <h2>San José</h2>
+                <div class="seleccionar">
+                    <p>Muestra la temperatura en </p>
+                    <select name="temperatura" onchange="convertir(this)">
+                        <option>°C</option>
+                        <option>°F</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div class="colWheather">
+                <div class="day">
+                    <h3>Hoy</h3>
+                    <img src="./imagenes/some_rain.png" alt="imagen de lluvia">
+                    <p>some rain</p>
+                    <p class="temperatures">
+                        <span class="high" id="temp1">24°</span>
+                        <span class="low" id="temp2">18°</span>
+                    </p>
+                </div>
+                <div class="day">
+                    <h3>Mañana</h3>
+                    <img src="./imagenes/some_sun.png" alt="imagen de sol">
+                    <p>some sun</p>
+                <p class="temperatures">
+                    <span class="high" id="temp3">27°</span>
+                    <span class="low" id="temp4">19°</span>
+                </div>
+                <div class="day">
+                    <h3>Viernes</h3>
+                    <img src="./imagenes/some_clouds.png" alt="imagen de nubes">
+                    <p>some cloud</p>
+                    <p class="temperatures">
+                        <span class="high" id="temp5">21°</span>
+                        <span class="low" id="temp6">16°</span>
+                    </p>
+                </div>
+                <div class="day">
+                    <h3>Sabado</h3>
+                    <img src="./imagenes/some_sun.png" alt="imagen de sol">
+                    <p>some sun</p>
+                <p class="temperatures">
+                    <span class="high" id="temp7">26°</span>
+                    <span class="low" id="temp8">21°</span>
+                </p>
+                </div>
+            </div>
+            <div class="cookie">
+                <div class="cookieBody">
+                    <img src="./imagenes/cookie.png" alt="imagen de una cookie">
+                
+                    <div class="textoCookie">
+                    
+                        <div class="text">
+                            <h2>Stop! Cookie time.</h2>
+                             <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our site traffic. <a href="#">Read more...</a></p>
+                        </div>
+                        
+                    </div>
+                    <button class="btn" onclick="aceptarCookie()">I Accept</button>
+                </div>       
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
